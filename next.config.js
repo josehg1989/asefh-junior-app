@@ -1,1 +1,1 @@
-module.exports = { images: { domains: ['vercel.app'], }, };
+module.exports = { reactStrictMode: true };
