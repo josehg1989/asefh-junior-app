@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ASEFH JUNIOR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="ASEFH Logo" class="logo">
+    <h1>ASEFH JUNIOR</h1>
+    <p>Bienvenido al asistente de ASEFH.</p>
+    <p>Aquí podrás consultar tus opciones y servicios disponibles.</p>
+
+    <button onclick="simularPrestamo()">💰 Simular préstamo</button>
+    <button onclick="alert('Seleccionaste: Conocer productos ASEFH. Esta función se agregará pronto.')">📘 Conocer productos ASEFH</button>
+    <button onclick="alert('Puedes contactar a Samy Maldonado al 9443-5032')">📞 Hablar con Samy Maldonado</button>
+    <button onclick="alert('Contactos:
+Samy Maldonado: 9443-5032
+José Gallardo: 3267-0365')">📇 Ver contactos de ASEFH</button>
+
+    <div id="simulador" style="display:none; margin-top: 20px;">
+      <h2>Simulador de Préstamos</h2>
+      <label>Monto solicitado: <input type="number" id="monto"></label><br>
+      <label>Aportaciones: <input type="number" id="aportes"></label><br>
+      <label>¿Cuántas cuotas bomba? <input type="number" id="cuotasBomba"></label><br>
+      <label>Valor de cada cuota bomba: <input type="number" id="valorBomba"></label><br>
+      <button onclick="calcularPrestamo()">CALCULAR</button>
+      <p id="resultado"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
